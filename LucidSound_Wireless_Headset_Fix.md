@@ -1,9 +1,10 @@
-# Post install notes
+# Problem:
 
-### LucidSound Wireless Headset has small volume range
-### generally too loud, sound cutoff when volume slider ist moved too far to the left
+- **LucidSound Wireless Headset has small volume range**
+- **generally too loud, sound cutoff when volume slider ist moved too far to the left**
 
-## pipewire with pipewire-pulse (Fedora 34)
+# Solution
+### pipewire with pipewire-pulse (Fedora 34)
 ````
 cd ~
 mkdir -p .config/pipewire/media-session.d/
@@ -19,8 +20,9 @@ to this:
 ````
 api.alsa.soft-mixer = true
 ````
+& **reboot**
 
-## pipewire with wireplumber (Fedora 35)
+### pipewire with wireplumber (Fedora 35)
 ````
 cd ~
 mkdir -p .config/wireplumber/main.lua.d/
@@ -36,3 +38,4 @@ to this:
 ````
 ["api.alsa.soft-mixer"] = true,
 ````
+& **reboot**
