@@ -4,7 +4,7 @@
 - **generally too loud, sound cutoff when volume slider ist moved too far to the left**
 
 # Solution
-### pipewire with pipewire-pulse (Fedora 34)
+### pipewire with pipewire-media-session (Fedora 34)
 ````
 cd ~
 mkdir -p .config/pipewire/media-session.d/
